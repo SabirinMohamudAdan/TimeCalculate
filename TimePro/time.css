@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#contain{
+    background:linear-gradient(47deg, #0047ab,  #883000 ,#5499 , #883000, #5499,#48d1cc);
+    width: 100%;
+    min-height: 100vh;
+    color: lavender;
+    position: fixed;
+
+}
+h1{
+    font-size: 30px;
+    color: lavender;
+    text-align: center;
+}
+#circle{
+    background:#48d1cc;
+    backdrop-filter: blur(50%);
+    width: 500px;
+    min-height: 100px;
+    top: 50%;
+    left: 30%;
+  transform: rotate(-50%,-50%);
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+ 
+ 
+
+
+    
+    
+}
+#cilce{
+    width: 100px;
+    
+    
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+#circle::before{
+    content: "";
+    width: 120px;
+    height: 120px;
+    background: rgb(124, 5, 102);
+    background-image: url(clocc.png);
+    background-size: contain;
+    
+
+
+    position: absolute;
+    left: -30px;
+    top: -10px;
+    border-radius: 50%;
+    z-index: -1;
+    
+}
+
+#circle::after{
+    content: "";
+    width: 120px;
+    height: 120px;
+    background:rgb(22, 52, 65);
+    background-image: url(clocc.png);
+    position: absolute;
+  
+    border-radius: 50%;
+    z-index: -1;
+    right: -30px;
+    bottom: -20px;
+}
+#cilce span{
+    left: -50px;
+    font-size: 50px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin-left: 10%;
+    left: -100px;
+    margin-right: 10%;
+    justify-content: space-between;
+}
+#cilce span ::after{
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    
+  
+}
+#hr::after{
+    content: "H";
+    font-size: 20px;
+
+
+
+
+}
+span{
+
+    max-width: 100px;
+}
+#min::after{
+    
+    content: "M";
+    font-size: 20px;
+   
+
+}
+#sec::after{
+    content: "S";
+    font-size: 20px;
+   
+}

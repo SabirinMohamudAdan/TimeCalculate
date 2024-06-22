@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="time.css">
+</head>
+<body>
+   
+    <div id="contain">
+     <h1>Calculate The Time</h1>
+        <div id="circle">
+            <div id="cilce">
+
+            <span id="hr">00</span>
+            <span>:</span>
+            <span id="min">00</span>
+            <span>:</span>
+            <span id="sec">00</span>
+            </div>
+          
+          
+
+        </div>
+    </div>
+    <script>
+    let hour=document.getElementById("hr");
+    let minu=document.getElementById("min");
+    let secon=document.getElementById("sec");
+    let curentime=new Date();
+    console.log(curentime);
+setInterval(()=>{
+    let curentime=new Date();
+    hour.innerHTML=(curentime.getHours()<10?"0":"")+curentime.getHours();
+    minu.innerHTML=(curentime.getMinutes()<10?"0":"")+curentime.getMinutes();
+    secon.innerHTML=(curentime.getSeconds()<10?"0":"")+curentime.getSeconds();
+
+},1000);
+   
+
+    </script>
+</body>
+</html>
